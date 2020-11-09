@@ -8,6 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "netlify": "ng build --prod && npm run scully",
     "scully": "scully",
     "scully:serve": "scully serve"
   },
@@ -22,7 +23,7 @@
     "@angular/platform-browser-dynamic": "~10.2.2",
     "@angular/router": "~10.2.2",
     "@scullyio/init": "^1.0.1",
-    "@scullyio/ng-lib-v8": "^0.0.22",
+    "@scullyio/ng-lib": "^1.0.0",
     "@scullyio/scully": "^1.0.0",
     "rxjs": "~6.6.3",
     "tslib": "^2.0.0",
