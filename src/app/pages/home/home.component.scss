@@ -1,0 +1,46 @@
+.container {
+  margin: 0 auto;
+  width: 80%;
+  color: white;
+
+  .hero-image {
+    padding: 2rem 0 2.5rem;
+  }
+
+  .hero-headline,
+  .hero-subline {
+    margin: 0;
+  }
+
+  .hero-headline {
+    font-size: 6rem;
+    text-transform: uppercase;
+  }
+
+  .hero-subline {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+
+  app-text-input {
+    margin-top: 1.5rem;
+  }
+
+  .newsletter.signup {
+    display: flex;
+    align-items: flex-end;
+
+    & > * {
+      height: 2rem;
+    }
+
+    button {
+      padding: 0 1.5rem;
+      margin-left: 0.5rem;
+      border: 1px solid transparent;
+      border-radius: 3px;
+    }
+  }
+}

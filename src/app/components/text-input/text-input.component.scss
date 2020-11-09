@@ -1,0 +1,32 @@
+@import '../../../scss/variables.scss';
+
+.container {
+  position: relative;
+
+  &:not(.invalid)::before {
+    content: '✓';
+    position: absolute;
+    right: 8px;
+    vertical-align: middle;
+    z-index: 2;
+    top: 5px;
+    bottom: 0;
+    color: green;
+    animation: fadeIn 0.25s linear;
+  }
+}
+
+input {
+  padding: 0.4rem 1.5rem 0.4rem 0.5rem;
+  position: relative;
+  box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

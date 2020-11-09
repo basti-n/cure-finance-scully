@@ -6,19 +6,20 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home';
+import { TextInputModule } from './components/text-input';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent
-  ],
+  declarations: [AppComponent, HomeComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    ScullyLibModule
+    ScullyLibModule,
+    ReactiveFormsModule,
+    TextInputModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

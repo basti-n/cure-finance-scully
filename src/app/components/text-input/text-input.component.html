@@ -1,0 +1,11 @@
+<div class="container" [class.invalid]="invalid">
+  <input
+    #input
+    (input)="handleChange(input.value)"
+    (blur)="handleBlur()"
+    type="text"
+    [placeholder]="placeholder"
+    [disabled]="disabled"
+    [value]="value"
+  />
+</div>

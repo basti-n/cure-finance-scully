@@ -1,1 +1,22 @@
-<p>Welcome to Cure Finance!</p>
+<div class="container">
+  <img
+    class="hero-image"
+    src="assets/images/logo.png"
+    height="50"
+    width="auto"
+    alt="logo"
+  />
+  <h1 class="hero-headline">Cure</h1>
+  <h2 class="hero-subline">Besseres Banking für Ärzte & Zahnärzte</h2>
+
+  <p>Wir informieren Sie sobald es losgeht.</p>
+
+  <div class="newsletter signup">
+    <app-text-input
+      [formControl]="newsletterEmail"
+      [placeholder]="'E-Mail-Adresse'"
+      [invalid]="!newsletterEmail.valid"
+    ></app-text-input>
+    <button type="submit" [disabled]="!newsletterEmail.valid">Vormerken</button>
+  </div>
+</div>
