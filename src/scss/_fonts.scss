@@ -1,6 +1,4 @@
-$path: '/assets/fonts/bauhaus93.woff';
-
 @font-face {
   font-family: 'bauhaus';
-  src: url(#{$path}) format('woff');
+  src: url('/assets/fonts/bauhaus93.woff') format('woff');
 }
