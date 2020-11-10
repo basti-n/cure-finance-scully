@@ -30,7 +30,7 @@
 
   .newsletter.signup {
     display: flex;
-    align-items: flex-end;
+    align-items: baseline;
 
     & > * {
       height: 2rem;
@@ -46,6 +46,9 @@
 
     @media only screen and (max-width: 450px) {
       button {
+        height: 2.2rem;
+      }
+      button:not(:disabled) {
         background: white;
         color: black;
       }
