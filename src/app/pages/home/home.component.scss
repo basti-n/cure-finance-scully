@@ -13,6 +13,7 @@
   }
 
   .hero-headline {
+    font-family: 'bauhaus';
     font-size: 6rem;
     text-transform: uppercase;
   }
@@ -32,7 +33,7 @@
 
   .newsletter.signup {
     display: flex;
-    align-items: baseline;
+    align-items: flex-end;
 
     & > *,
     ::ng-deep input {
@@ -44,12 +45,11 @@
       margin-left: 0.5rem;
       border: 1px solid transparent;
       border-radius: 3px;
+      font-size: 1.1rem;
       cursor: pointer;
     }
 
     @media only screen and (max-width: 450px) {
-      align-items: flex-end;
-
       ::ng-deep {
         input {
           height: $mobile-height;
